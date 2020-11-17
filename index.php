@@ -10,49 +10,21 @@ You can download this Open-Source-Software from here: https://github.com/uweDev/
 -->
     <head>
 	<meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Domain reserved</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Domain reserved</title>
 	<style>
-		* {
-			margin: 0;
-			padding: 0;
-		}
-		body {
-			font-family: Open Sans, sans-serif;
-		}
-		h2 {
-			font-size: 15px;
-			font-weight: 900;
-			color: #a00c57;
-		}
-		p {
-			font-size: 20px;
-			margin-bottom: 40px;
-		}
-		p + h2 + p {
-			margin-bottom: 0;
-		}
-		.text-center {
-			text-align: center;
-		}
-		header {
-			background-color: #e6e6e6;
-			padding: 30px 10px;
-		}
-		.reservedDomainContent {
-			padding: 12% 30%;
-		}
-		footer {
-			background-color: #a00c57;
-			color: #fff;
-			padding: 60px 10px;
-		}
-		footer a {
-			text-decoration: none;
-			color: #fff;
-		}
-	    </style>
+		*{margin:0;padding:0}
+		body{font-family:Open Sans,sans-serif}
+		h2{font-size:15px;font-weight:900;color:#a00c57}
+		p{font-size:20px;margin-bottom:40px}
+		p+h2+p{margin-bottom:0}
+		.text-center{text-align:center}
+		header{background-color:#e6e6e6;padding:30px 10px}
+		.reservedDomainContent{padding:12% 30%}
+		footer{background-color:#a00c57;color:#fff;padding:60px 10px}
+		footer a{text-decoration:none;color:#fff}
+	</style>
 	</head>
 	<body>
 		<div class="reservedDomainContainer">
@@ -61,9 +33,9 @@ You can download this Open-Source-Software from here: https://github.com/uweDev/
 			</header>
 			<div class="reservedDomainContent">
 				<h2>Deutsch</h2>
-				<p>Die <?=$_SERVER['HOST']; ?> wurde soeben freigeschaltet. Es wurden noch keine Inhalte hinterlegt.</p>
+				<p>Die <?=$_SERVER['SERVER_NAME']; ?> wurde soeben freigeschaltet. Es wurden noch keine Inhalte hinterlegt.</p>
 				<h2>English</h2>
-				<p>The <?=$_SERVER['HOST']; ?> is now reserved. As of now, no content has been uploaded.</p>
+				<p>The <?=$_SERVER['SERVER_NAME']; ?> is now reserved. As of now, no content has been uploaded.</p>
 			</div>
 			<footer class="text-center">
 				<a href="#">Powered by Your LOGO</a>
